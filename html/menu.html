@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eatry Restaurant</title>
+    
+        <!-- css -->   
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Road Rage' rel='stylesheet'>
+        <link rel="stylesheet" href="../css/flickity.min.css">
+        <link rel="stylesheet" href="../css/fontawesome.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+         crossorigin=""/>
+    
+    </head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header" style="background-image: url('../images/MenupageBanner.jpg');">
+        <div class="flex-row">
+            <div class="logo">
+                <span class="logo-effect">Eatery</span>
+                 <span class="logo-effect">Eatery</span>
+            </div>
+            <nav class="site-header__menu">
+                <ul class="flex-row">
+                    <li><a href="../html/index.html">Home</a></li>
+                    <li><a href="../html/about.html">About</a></li>
+                    <li><a href="../html/menu.html">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger">
+                <ion-icon class="hamburger-icon" name="menu-outline"></ion-icon>
+                <ion-icon class="close-icon" name="close-circle-outline"></ion-icon>
+           </button>
+            <a href="#contact" class="site-header__button"><h4>Book Table</h4></a>
+        </div>
+        <div class="site-header__hero">
+            <h1>Fresh, Local Ingredients</h1>
+            <h2>Supporting Local Farms, Crafting Seasonal Flavors for You</h2>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!--Ingredients-->
+        <section>
+            <div class="container">
+                <div class="logo">
+                    <span class="logo-effect">Local ingredients</span>
+                    <span class="logo-effect">Local ingredients</span>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-row ingredients">
+                        <img src="../images/veg.jpg" class="ingredients__pic" alt="">
+                        <h3 class="ingredients__text">Vegetables<br><hr>
+                        Locally harvested, ensuring freshness and sustainability in every bite.</h3>
+                    </div>
+                    <div class="flex-row ingredients">
+                        <img src="../images/meat.jpg" class="ingredients__pic" alt="">
+                        <h3 class="ingredients__text">Meat<br><hr>
+                        Responsibly sourced, premium quality for rich, authentic flavors.</h3>
+                    </div>
+                </div>
+
+                <div class="flex-row">
+                    <div class="flex-row flex-row-rev ingredients">
+                        <img src="../images/spice.jpg" class="ingredients__pic" alt="">
+                        <h3 class="ingredients__text">Spices<br><hr>
+                        Handpicked to elevate dishes with bold and aromatic notes.</h3>
+                    </div>
+                    <div class="flex-row flex-row-rev ingredients">
+                        <img src="../images/fruit.jpg" class="ingredients__pic" alt="">
+                        <h3 class="ingredients__text">Fruits<br><hr>
+                        Naturally ripened, delivering vibrant sweetness and juiciness.</h3>
+                    </div>
+                </div>
+
+                <div class="flex-row">
+                    <div class="flex-row ingredients">
+                        <img src="../images/cake.jpg" class="ingredients__pic" alt="">
+                        <h3 class="ingredients__text">Cakes<br><hr>
+                        Crafted with care using wholesome, high-quality ingredients.</h3>
+                    </div>
+                    <div class="flex-row ingredients">
+                        <img src="../images/coffee.jpg" class="ingredients__pic" alt="">
+                        <h3 class="ingredients__text">Coffee<br><hr>
+                        Ethically sourced beans roasted to bring out their unique character.</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--menu-->
+        <section class="container">
+            <!-- main dishes -->
+            <div class="my-grid">
+                <div class="two-col">
+                    <div class="logo">
+                        <span class="logo-effect">Main Dishes</span>
+                        <span class="logo-effect">Main Dishes</span>
+                    </div>
+                    <div class="dishes">
+                        <h3>Grilled Herb-Crusted Chicken - $18</h3>
+                        <h4>Tender chicken seasoned with our special herb blend.</h4>
+                    </div>
+                    <div class="dishes">
+                        <h3>Pan-Seared Salmon Fillet - $22</h3>
+                        <h4>Fresh salmon with a zesty citrus glaze.</h4>
+                    </div>
+                    <div class="dishes">
+                        <h3>Vegetarian Mushroom Risotto - $16</h3>
+                        <h4>Creamy arborio rice with wild mushrooms and herbs.</h4>
+                    </div>
+                    <div class="dishes">
+                        <h3>Beef and Pepper Stir-Fry - $19</h3>
+                        <h4>Juicy beef strips stir-fried with crisp peppers and spices.</h4>
+                    </div>
+                </div>
+
+                <!-- side dishes -->
+                <div class="two-col">
+                    <div class="logo">
+                        <span class="logo-effect">Side Dishes</span>
+                        <span class="logo-effect">Side Dishes</span>
+                    </div>
+                    <div class="dishes">
+                        <h3>Garlic Butter Vegetables - $8</h3>
+                        <h4>A medley of seasonal vegetables sautéed in garlic butter.</h4>
+                    </div>
+                    <div class="dishes">
+                        <h3>Crispy Sweet Potato Fries - $7</h3>
+                        <h4>Hand-cut sweet potatoes, lightly seasoned and fried.</h4>
+                    </div>
+                    <div class="dishes">
+                        <h3>Garden Fresh Salad - $6</h3>
+                        <h4>Mixed greens with a tangy balsamic dressing.</h4>
+                    </div>
+                    <div class="dishes">
+                        <h3>Cheesy Baked Potatoes - $9</h3>
+                        <h4>Twice-baked potatoes stuffed with cheese and herbs.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- masonry gallery-->
+        <section id="gallery">
+            <div class="container">
+                <div class="logo">
+                    <span class="logo-effect">Gallery</span>
+                    <span class="logo-effect">Gallery</span>
+                </div>
+                <div class="grid">
+                    <div class="grid-item grid-item--height2" data-image="../images/WhyEatery-1.jpg"></div>
+                    <div class="grid-item grid-item--width2 grid-item--height2" data-image="../images/WhyEatery-2.jpg"></div>
+                    <div class="grid-item" data-image="../images/WhyEatery-3.jpg"></div>
+                    <div class="grid-item" data-image="../images/WhyEatery-4.jpg"></div>
+                    <div class="grid-item grid-item--width3" data-image="../images/WhyEatery-5.jpg"></div>
+                    <div class="grid-item" data-image="../images/WhyEatery-6.jpg"></div>
+                    <div class="grid-item" data-image="../images/WhyEatery-7.jpg"></div>
+                    <div class="grid-item" data-image="../images/WhyEatery-8.jpg"></div>
+                    <div class="grid-item grid-item--width2 grid-item--height2" data-image="../images/WhyEatery-9.jpg"></div>
+                    <div class="grid-item grid-item--height2" data-image="../images/WhyEatery-10.jpg"></div>
+                    <div class="grid-item grid-item--height2" data-image="../images/WhyEatery-11.jpg"></div>
+                    <div class="grid-item grid-item--height2" data-image="../images/WhyEatery-12.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="../html/about.html" class="button"><h4>About us</h4></a>
+        </div>
+        </section>
+
+        <!-- Contact Us -->
+        <section id="contact">
+            <div class="container">
+                <div class="logo">
+                    <span class="logo-effect">Contact Us</span>
+                    <span class="logo-effect">Contact Us</span>
+                </div>
+                <!-- map -->
+                <div id="map"></div>
+
+                <!-- info -->
+                <div class="my-grid">
+                    <div class="two-col">
+                        <div class="contact-us_info">
+                            <i class="fa-solid fa-envelope fa-3x icon-border"></i>
+                            <h5>Email us<br>
+                            info@eatery.com</h5>
+                        </div>
+                        <div class="contact-us_info">
+                            <i class="fa-solid fa-phone fa-3x icon-border"></i>
+                            <h5>Phone us<br>
+                            123 456 789</h5>
+                        </div>
+                        <div class="contact-us_info">
+                            <i class="fa-solid fa-earth-americas fa-3x icon-border"></i>
+                            <h5>Find us<br>
+                            123 Main Street, 4567,Vancouver</h5>
+                        </div>
+                        <div class="contact-us_smbtn">
+                            <i class="fa-brands fa-facebook fa-3x"></i>
+                            <i class="fa-brands fa-instagram fa-3x"></i>
+                            <i class="fa-brands fa-x-twitter fa-3x"></i>
+                            <i class="fa-brands fa-youtube fa-3x"></i>
+                            <i class="fa-brands fa-pinterest fa-3x"></i>
+                        </div>    
+                    </div>
+
+                    <div class="two-col">
+                        <form id="contact-form" class="contact-us_input">
+                            <h5>Name</h5>
+                            <input id="cname" name="name" minlength="2" type="text" placeholder="Please enter your name." required>
+                            <h5>Email</h5>
+                            <input id="cemail" type="email" name="email" placeholder="Please enter your email." required>
+                            <h5>Message</h5>
+                            <textarea id="cmessage" name="message" minlength="10" maxlength="165" placeholder="Please enter your message." required></textarea>
+                            <button type="submit" class="button"><h4>Submit</h4></button>
+                        </form>  
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="flex-row site-footer">
+                <div>
+                    <div class="logo">
+                        <span class="logo-effect">Eatery</span>
+                        <span class="logo-effect">Eatery</span>
+                    </div>
+                    <h4>Opening Hours</h4>
+                    <hr>
+                    <h5>Monday - Saturday｜9AM - 12PM<br>
+                         Sunday｜6AM - 12PM
+                    </h5>
+                </div>
+                <div>
+                    <h4>Unforgettable culinary experiences.</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- FontAwesome and Ionicons -->
+<script src="../js/fontawesome.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- Libraries -->
+<!-- 1. jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<!-- 2. Form validation -->
+<script src="../js/jbvalidator.min.js"></script>    
+
+<!-- 3. Flickity carousel -->
+<script src="../js/flickity.pkgd.min.js"></script>
+
+<!-- 4. ScrollReveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- 5. Leaflet map -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+ crossorigin=""></script>
+
+<!-- 6. Masonry -->
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+<!-- My Script -->
+<script src="../js/script.js"></script>
+
+</body>
+</html>
